@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | 99 Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        .auth-bg {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background: var(--bg-dark);
+            padding: 2rem;
+        }
+
+        .auth-card {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 16px;
+            border: 1px solid var(--neon-purple);
+            width: 100%;
+            max-width: 450px;
+            z-index: 10;
+            box-shadow: 0 0 30px rgba(123, 47, 255, 0.1);
+        }
+
+        .auth-logo {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="auth-bg">
+        <div class="auth-card">
+            <div class="auth-logo">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-icon">⬡</span>
+                    <span class="logo-text">99 <span class="logo-accent">Club</span></span>
+                </a>
+            </div>
+            <h2 class="modal-title" style="margin-bottom: 1rem;">Join the Club</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">Start your winning journey
+                today</p>
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" class="form-input" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label>Mobile Number</label>
+                <input type="text" class="form-input" placeholder="+91 xxxxxxxxxx">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-input" placeholder="Min 8 characters">
+            </div>
+            <div class="form-group">
+                <label>Referral Code (Optional)</label>
+                <input type="text" class="form-input" placeholder="99VIP">
+            </div>
+
+            <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 2rem;">
+                <input type="checkbox" id="terms" style="margin-top: 5px;">
+                <label for="terms" style="font-size: 0.8rem; color: var(--text-muted); text-transform: none;">I am 18+
+                    and agree to the <a href="#" class="neon-purple">Terms & Conditions</a> and <a href="#"
+                        class="neon-purple">Privacy Policy</a>.</label>
+            </div>
+
+            <button class="btn btn-primary btn-full"
+                style="background: linear-gradient(135deg, var(--neon-purple), var(--neon-blue));"
+                onclick="location.href='index.html'">Register Account</button>
+
+            <p style="text-align: center; margin-top: 2rem; font-size: 0.9rem; color: var(--text-muted);">
+                Already have an account? <a href="login.html" class="neon-purple">Login here</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TED Teddy - Cute Teddies for Every Special Moment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-paw"></i> TED Teddy
+            </a>
+            <nav class="navbar" id="navbar">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="icons">
+                <div class="cart-icon" id="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="menu-btn" id="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Side Cart -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart Items will be injected here via JS -->
+            <p class="empty-cart-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="total-price">$0.00</span>
+            </div>
+            <a href="#order" class="btn btn-primary btn-checkout" id="checkout-btn">Checkout</a>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to TED Teddy</h1>
+            <p>Cute Teddies for Every Special Moment. Bring a smile to your loved ones.</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/teddy_hero_1774544696148.png" alt="TED Teddy Hero Image">
+            <div class="floating-paw paw1"><i class="fa-solid fa-paw"></i></div>
+            <div class="floating-paw paw2"><i class="fa-solid fa-paw"></i></div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2 class="section-title">Our Best <span>Teddies</span></h2>
+        <div class="product-grid" id="product-container">
+            <!-- Products injected by JS -->
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h2 class="section-title">Teddy <span>Gallery</span></h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="assets/teddy_gallery_1_1774545010632.png" alt="Gallery 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1559405615-5c1cf76e6a35?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 2"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1545620857-797f766fb315?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 3"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1544654067-279fd68e14e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 4"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1560961811-933cfd9361ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 5"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1521714150532-6a6c2211fdf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gallery 6"></div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <h2 class="section-title">Customer <span>Reviews</span></h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"I bought the fluffy brown teddy for my daughter's birthday and she absolutely loves it! So soft and cuddly."</p>
+                <div class="review-user">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah J.">
+                    <div class="user-info">
+                        <h4>Sarah J.</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="review-text">"Premium quality! The packaging was very cute and delivery was on time. Highly recommend TED Teddy."</p>
+                <div class="review-user">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T.">
+                    <div class="user-info">
+                        <h4>Michael T.</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"The giant white teddy is massive and perfect. It looks great in my room. Thank you TED Teddy!"</p>
+                <div class="review-user">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily R.">
+                    <div class="user-info">
+                        <h4>Emily R.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Placement Section -->
+    <section class="order" id="order">
+        <h2 class="section-title">Place Your <span>Order</span></h2>
+        <div class="order-container">
+            <form id="order-form" class="order-form">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="input-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" rows="4" placeholder="Enter your complete address" required></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="order-product">Selected Product</label>
+                    <select id="order-product" required>
+                        <option value="" disabled selected>Select a product to order</option>
+                        <!-- Options injected by JS -->
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+            </form>
+            <div class="order-success" id="order-success">
+                <i class="fa-solid fa-circle-check"></i>
+                <h3>Order Placed Successfully!</h3>
+                <p>Thank you for shopping with TED Teddy. Your fluffy friend is on its way!</p>
+                <button class="btn btn-primary" id="continue-shopping">Continue Shopping</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact Section -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3><i class="fa-solid fa-paw"></i> TED Teddy</h3>
+                <p>Cute Teddies for Every Special Moment. We deliver joy and hugs in a box.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <div class="footer-box contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-user"></i> <strong>Jeenu</strong></p>
+                <p><i class="fa-solid fa-phone"></i> +91 9266540322</p>
+                <p><i class="fa-solid fa-location-dot"></i> Alpha-II, Greater Noida</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TED Teddy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toasted Notification -->
+    <div id="toast" class="toast">Item added to cart!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
